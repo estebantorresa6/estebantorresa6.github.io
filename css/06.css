@@ -1,0 +1,50 @@
+html {
+	font: 1em sans-serif;
+	}
+body {
+	background-color: #0A389C;
+}
+p {
+	color: #E7E9EC;
+}
+h2, h4, h6 {
+	color: #D649F2;
+}
+b, strong {
+	color: black;
+}
+i, em{
+	font-family: Segoe UI, 'Arial', sans-serif;
+}
+em {
+	font-family: Impact;
+}
+u {
+	font-style: italic;
+}
+
+/* Divs */
+
+div {
+	display: inline-block;
+	border: 1px black solid;
+	width: 100px;
+	height: 100px;
+}
+
+#div1 {
+	font-weight: bolder;
+	text-align: center;
+}
+
+.rojo:first {
+	border-top: #F2BD25;
+}
+
+.rojo, div.rojo {
+	background-color: red;
+	color: #F2F225;
+	text-align: center;
+	border-color: white;
+	border-style: dashed;
+}
