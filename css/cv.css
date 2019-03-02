@@ -1,53 +1,37 @@
 html {
-	background: url(../img/bg.jpg) no-repeat center center fixed; 
+	/*background: url(../img/bg.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+  	display: inline-block;*/
   	font-family: 'Montserrat', sans-serif;
-  	scroll-behavior: smooth;
-  	display: inline-block;
 }
 
 .container {
-	display: inline-block;
-	width: 100%;
-}
-
-body {
-	margin: 0 auto;
+	display: grid;
+	grid-template-columns: .5fr 1fr;
 	padding: 20px;
-  	display: inline-block;
 }
 
 .prof_data, .prof_info {
-	float: left;
-	margin: 0 auto;
-	padding: 40px;
+	padding: 20px;
 	text-align: center;
-	display: inline-block;
 }
 
 .prof_data {
-	width: 30%;
 	height: 100%;
 	color: black;
-	border-radius: 50px;
+	border-radius: 40px;
 	background-color: #EBEBEB;
-}
-
-.prof_info {
-	width: 47rem;
-	height: 100%;
-	border: 1px solid;
 }
 
 .prof_pic {
 	border-radius: 100px;
 	width: 200px;
 	height: 200px;
-	border-style: 4px solid;
-	border-color: blue;
+	border: 4px blue;
+	border-style: solid;
 }
 
 .data_cont {
@@ -59,12 +43,118 @@ body {
 	vertical-align: middle;
 }
 
-.img_sp {
-	width: 70px;
-    height: 70px;
-    border-style: 4px black solid;
-	border-color: black;
-    background: yellow;
-    border-radius: 100px;
+#items_sp {
+	padding-top: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item_sp {
+	align-items: center;
+  	justify-content: center;
+  	display: grid;
+  	grid-template-columns: 1fr;
+  	align-items: center;
+}
+
+.img_cont {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.img_txt {
+	text-align: center;
 	vertical-align: middle;
+}
+
+#img_sp {
+	border: .5px black;
+    border-style:solid;
+    border-radius: 100px;
+    padding: 10px;
+}
+
+#referencias {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: auto;
+}
+
+.referencia {
+	display: grid;
+	grid-template-columns: .4fr 1fr;
+	grid-auto-rows: auto;
+	text-align: left;
+	image
+}
+
+#imagen {
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	display: flex;	
+}
+
+#contacto {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-top: 50px;
+}
+
+.contact {
+	width: 40px;
+	height: 40px;
+}
+
+#experiencia_cont{
+	display: grid;
+	grid-template-columns: .4fr 1fr;
+}
+
+.puesto{
+	text-align: left;
+}
+
+p.mayus{
+	text-transform: uppercase;
+}
+
+p.negrita {
+	font-weight: bold;
+}
+
+p.fecha {
+	font-style: italic;
+}
+
+h3.datos{
+	text-align: left;
+}
+
+.idioma{
+	text-align: left;
+}
+
+/* DIVISORES */
+
+.hr_main {
+	border: 0;
+	height: 25px;
+	background-image: url(../img/main.png);
+	background-repeat: no-repeat;
+}
+
+hr.simple {
+border: 0;
+height: 25px;
+background-image: url(../img/line.png);
+background-repeat: no-repeat;
+}
+
+.hr_ini {
+	border: 0;
+	height: 25px;
+	background-image: url(../img/data.png);
+	background-repeat: no-repeat;
 }

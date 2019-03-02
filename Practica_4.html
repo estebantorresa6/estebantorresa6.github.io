@@ -10,28 +10,52 @@
 			<div class="prof_data">
 				<img src="img/esteban.jpg" alt="Esteban's Profile Pic" class="prof_pic">
 				<h3>MI PERFIL</h3>
-				<hr>
+				<hr class="hr_ini">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam rem laborum officia quaerat non dolore repellat totam, a quod iste recusandae qui temporibus. Dolore laboriosam voluptatum eos, earum dolor recusandae?</p>
 				<h3>IDIOMAS</h3>
-				<hr>
-				<ul>
-					<li>Español</li>
-					<li>Ingles</li>
-					<li>Frances</li>
-				</ul>
+				<hr class="hr_ini">
+				<div id=lang>
+					<p class="idioma">Español</p>
+					<p class="idioma">Ingles</p>
+					<p class="idioma">Frances</p>
+				</div>
+					
 				<h3>REFERENCIAS</h3>
-				<hr>
-				<ul>
-					<li>Persona 1</li>
-					<li>Persona 2</li>
-					<li>Persona 3</li>
-				</ul>
+				<hr class="hr_ini">
+				<div id="referencias">
+					<div class="referencia">
+						<img src="https://img.icons8.com/ios/50/000000/user-male-circle.png" id="imagen">
+						<div>
+							<p>Angel Díaz</p>
+							<p>CEO | Andia</p>
+						</div>
+					</div>
+					<div class="referencia">
+						<img src="https://img.icons8.com/ios/50/000000/user-male-circle.png">
+						<div>
+							<p>Francisco Elizondo</p>
+							<p>Lic. en Admon | AT&T</p>
+						</div>
+					</div>
+					<div class="referencia">
+						<img src="https://img.icons8.com/ios/50/000000/user-male-circle.png">
+						<div>
+							<p>Jaime Delgado</p>
+							<p>Profesor | Instituto Tecnológico de Cd. Valles </p>
+						</div>
+					</div>
+				</div>
+				<div id="contacto">
+						<a href="http://fb.com/EstebanTorresA6" ><img src="img/fb.png" alt="fb" class="contact"></a>
+						<a href="https://www.linkedin.com/in/aesteban-ttrejo/" ><img src="img/linkedin.png" alt="linkedin" class="contact"></a>
+						<a href="https://www.instagram.com/estebantorresa6/"><img src="img/insta.png" alt="instagram" class="contact"></a>
+				</div>
 			</div>
 			<div class="prof_info">
 				<div class="header"> 
 					<h1>ESTEBAN TORRES</h1>
 					<h3>Estudiante de Ingeniería en Sistemas Computacionales</h3>
-					<hr class="hr_head">
+					<hr class="hr_main">
 					<div class="data_cont">
 						<div class="head_img">
 							<img src="https://img.icons8.com/material/24/000000/marker.png">
@@ -58,17 +82,67 @@
 					</div>
 				</div>
 				<div class="job_xp">
-					<h3>EXPERIENCIA LABORAL</h3>
+					<h3 class="datos">EXPERIENCIA LABORAL</h3>
 					<hr class="simple">
-				</div>
-				<div class="specialties">
-					<h3>ESPECIALIDADES</h3>
-					<hr class="simple">
-					<div class="img_sp">
-						<img src="https://img.icons8.com/material/48/000000/source-code.png">
+					<div id="experiencia_cont">
+						<div class="puesto">
+							<p class="mayus">Auxiliar administrativo</p>
+							<p class="fecha">Enero 2017 - Diciembre 2017</p>
+						</div>
+						<div class="puesto">
+							<p class="negrita">Secretaría de Comunicaciones y Transportes</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magnam, non. Excepturi, commodi! Ad possimus molestias quod quam et omnis, ullam perspiciatis illo quidem maiores beatae eum consequatur minima, veritatis.</p>
+						</div>
 					</div>
-					<div class="img_txt">
-						
+					<div id="experiencia_cont">
+						<div class="puesto">
+							<p class="mayus">Diseñador y desarrollador</p>
+							<p class="fecha">Enero 2017 - Diciembre 2017</p>
+						</div>
+						<div class="puesto">
+							<p class="negrita">Grupo de Investigación de Sistemas de Almacenamiento Adaptivo</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magnam, non. Excepturi, commodi! Ad possimus molestias quod quam et omnis, ullam perspiciatis illo quidem maiores beatae eum consequatur minima, veritatis.</p>
+						</div>
+					</div>
+				</div>
+				<h3 class="datos">ESPECIALIDADES</h3>
+				<hr class="simple">
+				<div id="items_sp">
+					<div class="item_sp">
+						<div class="img_cont">
+							<img src="https://img.icons8.com/material/48/000000/source-code.png" id="img_sp">
+						</div>
+						<div class="img_txt">
+							<p>Programación informática</p>
+						</div>
+					</div>
+					<div class="item_sp">
+						<div class="img_cont">
+							<img src="https://img.icons8.com/material-outlined/48/000000/for-experienced.png" id="img_sp">
+						</div>
+						<div class="img_txt">
+							<p>Liderazgo</p>
+						</div>
+					</div>
+					<div class="item_sp">
+						<div class="img_cont">
+							<img src="https://img.icons8.com/material/48/000000/teamwork.png" id="img_sp">
+						</div>
+						<div class="img_txt">
+							<p>Trabajo en equipo</p>
+						</div>
+					</div>
+				</div>
+				<h3 class="datos">FORMACIÓN ACADÉMICA</h3>
+				<hr class="simple">
+				<div id="experiencia_cont">
+					<div class="puesto">
+						<p class="mayus">Ingeniería en sistemas computacionales</p>
+						<p class="fecha">Agosto 2015 - Febrero 2020</p>
+					</div>
+					<div class="puesto">
+						<p class="negrita">Instituto Tecnológico de Cd. Valles</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, magnam, non. Excepturi, commodi! Ad possimus molestias quod quam et omnis, ullam perspiciatis illo quidem maiores beatae eum consequatur minima, veritatis.</p>
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario</title>
+		<link rel="stylesheet" href="css/formulario.css">
+	</head>
+	<h1>FORMULARIO</h1>
+	<body>
+		<form action="05-formulario.html" method="GET">
+			<h2>Datos del usuario</h2>
+			<label for="usuario">Usuario</label>
+			<input type="text" placeholder="Ingresa tu usuario" name="usuario" id="usuario" maxlength="15">
+			<br>
+			<label for="contrasena">Contrase&ntilde;a</label>
+			<input type="password" placeholder="Ingresa tu contrase&ntilde;a" name="contrasena" id="contrasena">
+
+			<h2>Diseña tu pizza</h2>
+			<h3>Tipo de masa</h3>
+			<label for="masa">Elige tu tipo de masa: </label>
+			<select name="masa" id="masa">
+				<option value="cl">Clasica</option>
+				<option value="cr">Crunchy</option>
+				<option value="li">Light</option>
+			</select>
+
+			<h3>Tamaño</h3>
+			<label for="t_chicho">
+				<input type="radio" name="tamano" id="t_chicho"> Chica
+			</label>
+			<label for="t_mediana">
+				<input type="radio" name="tamano" id="t_mediana" checked=""> Mediana
+			</label>
+			<label for="t_grande">
+				<input type="radio" name="tamano" id="t_grande"> Grande
+			</label>
+
+			<h3>Ingredientes</h3>
+			<label for="i_queso">
+				<input type="checkbox" name="i_queso" id="i_queso" checked> Queso
+			</label>
+			<label for="i_chile">
+				<input type="checkbox" name="i_chile" id="i_chile"> Chile
+			</label>
+			<label for="i_piña">
+				<input type="checkbox" name="i_piña" id="i_piña"> Pi&ntilde;a
+			</label>
+			<label for="i_pollo">
+				<input type="checkbox" name="i_pollo" id="i_pollo"> Pollo
+			</label>
+			<label for="i_champinon">
+				<input type="checkbox" name="i_champinon" id="i_champinon"> Champi&ntilde;&oacute;n
+			</label>
+
+			<h3>Extras</h3>
+			<label for="e_queso">
+				<input type="checkbox" name="e_queso" id="e_queso"> Queso++
+			</label>
+			<label for="e_pastel">
+				<input type="checkbox" name="e_pastel" id="e_pastel"> Pastel
+			</label>
+			<label for="e_refresco">
+				<input type="checkbox" name="e_refresco" id="e_refresco"> Refresco
+			</label>
+			<label for="e_papas">
+				<input type="checkbox" name="e_papas" id="e_papas"> Papas
+			</label>
+
+			<h3>Fecha de entrega</h3>
+			<input type="date" name="fecha" id="fecha">
+			<hr>
+			<button type="submit">Enviar</button>
+		</form>
+		<script src="scripts/zepto.js"></script>
+		<script src="scripts/formulario.js"></script>
+	</body>
+</html>

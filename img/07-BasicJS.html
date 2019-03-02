@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS</title>
+	</head>
+	<body>
+		<h1 id="msj">mensaje</h1>
+
+		<script>
+			let _edad = prompt("¿Que edad tienes? 7w7");
+			let edad = Number(_edad);
+			const MAYOR = 18;
+			console.log(edad);
+			let banner = document.querySelector('#msj');
+
+			if (isNaN(edad)){
+
+				console.error("La edad no es un numero");
+				alert("No estoy bromeando, prro");
+			}
+			console.log(banner);
+			if (edad >= MAYOR) {
+				banner.innerHTML = "No hay delito uwu";
+				document.body.style.background = "black";
+				document.body.style.color = "blue";
+			} else {
+				banner.innerHTML = "Esponja enloqueciste! O:";
+				document.body.style.background = "red";
+				document.body.style.color = "yellow";
+			}
+
+
+		</script>
+	</body>
+</html>
