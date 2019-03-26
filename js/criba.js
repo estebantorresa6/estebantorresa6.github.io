@@ -42,48 +42,56 @@ Zepto(function($){
         for (let i = 0; i < stop; i++) {
             $(ids[multiples_2[i]-1]).css("background-color","red");
         }
+       
     });
     btn3.click(function(e){
         e.preventDefault();
         for (let i = 0; i < stop; i++) {
             $(ids[multiples_3[i]-1]).css("background-color","blue");
         }
+       
     });
     btn4.click(function(e){
         e.preventDefault();
         for (let i = 0; i < stop; i++) {
             $(ids[multiples_4[i]-1]).css("background-color","pink");
         }
+       
     });
     btn5.click(function(e){
         e.preventDefault();
         for (let i = 0; i < stop; i++) {
             $(ids[multiples_5[i]-1]).css("background-color","yellow");
         }
+        
     });
     btn6.click(function(e){
         e.preventDefault();
         for (let i = 0; i < stop; i++) {
             $(ids[multiples_6[i]-1]).css("background-color","aquamarine");
         }
+       
     });
     btn7.click(function(e){
         e.preventDefault();
         for (let i = 0; i < stop; i++) {
             $(ids[multiples_7[i]-1]).css("background-color","green");
         }
+        
     });
     btn8.click(function(e){
         e.preventDefault();
         for (let i = 0; i < stop; i++) {
             $(ids[multiples_8[i]-1]).css("background-color","brown");
         }
+       
     });
     btn9.click(function(e){
         e.preventDefault();
         for (let i = 0; i < stop; i++) {
             $(ids[multiples_9[i]-1]).css("background-color","orange");
         }
+        
     });
     btnPrimos.click(function(e){
     for (let i = 0; i < ids.length; i++) {
@@ -94,6 +102,8 @@ Zepto(function($){
     btnLimpiar.click(function(e){
         e.preventDefault();
         $('.boton').css("background-color","transparent");
+        
+        
     });
 
 
