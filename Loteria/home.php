@@ -22,7 +22,7 @@
             <h4>Registro jugador</h4>
             <form class="col s6">
                 <div class="row" id="formulario">
-                    <div class="input-field col s12">
+                    <div id="inputF" class="input-field col s12">
                         <i class="material-icons prefix">account_circle</i>
                         <input id="j1" type="text" class="validate">
                         <label for="j1">Jugador</label>
@@ -32,9 +32,10 @@
         </div>
         <div class="row">
             <div class="col s12 offset-s2">
-                <a id="btn-agregar" class="waves-effect waves-light btn" onclick="agregar(); return false;"><i class="material-icons left">add</i>nuevo jugador</a>
+                <a id="btn-agregar" class="waves-effect waves-light btn"><i class="material-icons left">add</i>nuevo jugador</a>
             </div>
         </div>
+        
     </div>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>

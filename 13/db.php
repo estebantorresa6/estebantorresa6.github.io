@@ -1,5 +1,5 @@
 <?php
-print_r(PDO::getAvailableDrivers());
+//print_r(PDO::getAvailableDrivers());
 
 try {
   $dbUser = "admin"; 
@@ -7,6 +7,78 @@ try {
   $db = new PDO("pgsql:host=127.0.0.1;dbname=demo;port=5432;user=admin;password=1234");
 } catch (PDOException $e){
   echo $e->getMessage();
+}
+
+class DB {
+  private $db;
+  //$db = new DB("root","root12345","demo");
+  function DB($user, $password, $dbName, $host = "127.0.0.1", $driver = null, $port = null){
+    $this->$db = null;
+    $driver = (is_null($driver)) ? "pgsql" : $driver;
+    $port = (is_null($port)) ? "5432" : $port;
+    try {
+      $this->$db = new PDO("$driver:host=$host;dbname=$dbName;port=$port", $user, $password);
+    } catch (PDOException $e){
+      echo $e->getMessage();
+      die();
+    }
+  }
+
+  //$db->select("usuarios","name,password","WHERE id = 2");
+  public function select($table, $columns = "*", $where = "1"){
+    if(!is_null($this->$db)){
+      $sql = "SELECT $columns FROM $table WHERE $where";
+      try {
+        $st = $this->$db->prepare($sql);
+        $st->setFetchMode(PDO::FETCH_ASSOC);
+        $st->execute();
+        return $st->fetchAll();
+      } catch (PDOException $e) {
+        echo "Error: $sql ({$e->getMessage()})";
+      }
+    }
+    throw new Exception("No hay conexión la BD");
+  }
+  public function first($table, $columns = "*", $where = "1"){
+    $res = $this->select($table, $columns, $where);
+    if(count($res) >= 1){
+      return $res[0];
+    } else {
+      return [];
+    }
+  }
+
+  public function save($table, $columns, $values){
+    $sql = "INSERT INTO $table ($columns) VALUES ($values)";
+    try {
+      $st = $this->$db->prepare($sql);
+      $st->execute();
+    } catch (PDOException $e) {
+      echo $e->getMessage();
+    }
+  }
+
+  public function update($table,$pares,$id){
+    if (!is_null($id)) {
+      $id = (int)$id;
+      try {
+        $sql = "UPDATE $table SET $pares WHERE id = $id";
+        $st = this->$db->prepare($sql);
+        $st->execute();
+      } catch (PDOException $e){
+        echo $e->getMessage();
+      }
+    }
+  }
+
+  public function delete($table, $cond){
+    try {
+      $st = this->$db->prepare("DELETE FROM $table WHERE $cond");
+      $st->execute();
+    } catch (PDOException $e) {
+      echo $e->getMessage();
+    }
+  }
 }
 
 /*
@@ -80,5 +152,4 @@ class db {
   }
 }
 */
-
 ?>
